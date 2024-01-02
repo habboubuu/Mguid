@@ -1,0 +1,85 @@
+.distination{
+    margin: 4rem 6rem; /* masafa kharijiya mn fu9 w ta7t section */
+}
+
+.distination h1{
+    font-size: 2.3rem;
+    color: #222;
+}
+
+.first-des{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+.first-des-revese{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+.des-text{
+    width: 45%;
+    text-align: start; /* text badi mn liser */
+    font-size: 1.1rem;
+}
+
+.des-text h2{
+    padding-bottom: 1rem;
+}
+
+.image{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99; /* kaytal3 text fu9 image */
+}
+
+.image img{
+    width: 49%;
+    height: 350px;
+    object-fit: cover;  /* 7ifad 3la jawdt suwra */
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+/*image tal3a 3la image*/
+.image img:nth-child(2){
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+
+@media screen and (max-width: 850px){
+    .distination{
+        margin: 4rem 2rem;
+    }
+    .first-des{
+        display: flex;
+        flex-direction: column-reverse; /* kay3ud 3amuduan w image 9bl texts */
+        margin-top: 2.5rem;
+    }
+    .first-des-revese{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 4.5rem;
+    }
+    .image{
+        margin: 1.8rem 0;
+        width: 100%;
+    }
+    .des-text{
+        width: 100%;
+    }
+    .image img{
+        height: 250px;
+    }
+}
+
+
+
+

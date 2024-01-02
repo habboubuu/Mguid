@@ -1,0 +1,85 @@
+/*.container{
+    padding: 0 10px;
+    margin: 0 auto;
+}*/
+/*body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 3rem 1.2rem;
+}
+
+/*.section{
+    margin: 3rem 1rem;
+    
+}*/
+/*.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}*/
+.gallery-list{
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.gradient{
+    width: 180px;
+    height: 300px;
+    background-image: linear-gradient(to top, black, transparent);
+    border-radius: 7px;
+    /*opacity: 0.5;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+/*.gradient:hover{
+    opacity: 1;
+
+}*/
+
+
+.imgSlider{
+    /*background-image: linear-gradient(rgb(94, 94, 94), #222);*/
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    position: absolute;
+    bottom: 7px;
+    left: 5%;
+}
+.items i{
+    color: #fff;
+    font-size: 1rem;
+}
+.items h4{
+    color: #c5c5c5;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 464px){
+    .gradient{
+        width: 150px;
+    }
+    .imgSlider{
+        width: 150px;
+    }
+
+    .items h4, .items i{
+        font-size: .8rem;
+    }
+}

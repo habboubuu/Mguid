@@ -1,0 +1,178 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* ////////  hada hero section dyal about w service w contact  /////// */
+.hero-mid{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.hero-mid h1{
+    padding-top: 4rem;
+}
+/*  ////////////////   */
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* bach tb9a quilité dual img */
+}
+.hero-text{
+    color: rgb(36, 36, 36);
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 50%;  /* left 50% transform -50% bach navbar yji fi wast */
+    transform: translate(-50%);
+}
+
+
+/* ================ forms ===================*/
+.formall{
+    position: relative;
+    padding: 1rem;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin: 4rem 2rem;
+    padding: 2rem;
+    width: 45%;
+    height: 450px;
+    border-radius: 7px;
+    position: absolute;
+    top: -560px;
+    left: 0;
+    z-index: 99;
+    flex-wrap: wrap;
+    
+}
+
+.formall h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.formall p{
+    font-size: .8rem;
+    margin-bottom: .8rem;
+}
+
+.options{
+    padding: .6rem ;
+    width: 100%;
+    color: #505050;
+    border-radius: 7px;
+    border: none;
+}
+
+.date{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.date input{
+    padding: .6rem;
+    width: 50%;
+    color: #505050;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    border: none;
+}
+
+.number{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.number input{
+    padding: .6rem;
+    width: 50%;
+    color: #505050;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    border: none;
+}
+
+.rooms{
+    padding: .6rem;
+    color: #505050;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+}
+.rooms input{
+    width: 100%;
+}
+
+.submit{
+    display: block;
+    margin-top: 30px;
+    padding: .6rem;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    background: #01959a;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+}
+
+.submit:hover{
+    background: linear-gradient(to left,rgb(68, 68, 207), #01959a);
+    transition: 0.8s ease-in-out;
+
+}
+
+
+@media screen and (max-width: 850px){
+    .hero-text h1{
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+    .hero-text p{
+        font-size: 1rem;
+        padding: 0 0 2rem 0;
+    }
+    .hero-text .show{
+        padding: .8rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    form{
+        width: 80%;
+        height: 450px;
+        left: 50%;  /* left 50% transform -50% bach navbar yji fi wast */
+        transform: translate(-58%);
+    }
+    .submit{
+        margin-top: 20px;
+        font-weight: 200;
+    }
+
+}
+
+@media screen and (max-width: 460px){
+    .hero-text h1{
+        padding: 10px 20px;
+        font-size: 1.6rem;
+    }
+    .hero-text p{
+        font-size: .6rem;
+        padding: 0 0 1rem 0;
+    }
+    .hero-text .show{
+        padding: .6rem 1rem;
+        font-size: .8rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}

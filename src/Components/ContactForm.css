@@ -1,0 +1,76 @@
+.form-container{
+    margin: 4rem 6rem;
+}
+
+.form-container h1{
+    margin-bottom: 3rem ;
+    color: #222;
+}
+
+.form-container .contactform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-container .contactform input{
+    width: 600px;
+    padding: 1rem 1rem;
+    border: #525252 solid 1px;
+    border-radius: 7px;
+}
+
+.form-container .contactform textarea{
+    width: 600px;
+    height: 130px;
+    padding: 1rem 1rem;
+    border: #525252 solid 1px;
+    border-radius: 7px;
+}
+.btnEmail{
+    padding: 1rem;
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: #222 solid 1px;
+    width: 600px;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.btnEmail:hover{
+    background: #222;
+    color: #fff;
+}
+
+@media screen and (max-width: 850px){
+    .form-container h1{
+        font-size: 24px;
+        margin-bottom: 1.2rem ;
+    }
+    .form-container .contactform input,.form-container .contactform textarea{
+        width: 400px;
+        padding: 1rem 1rem;
+    }
+    .btnEmail{
+        width: 400px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 488px){
+    .form-container h1{
+        font-size: 15px;
+        margin-bottom: .8rem ;
+    }
+    .form-container .contactform input,.form-container .contactform textarea{
+        width: 300px;
+    }
+    .btnEmail{
+        width: 300px;
+        font-size: 15px;
+    }
+}
